@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+/*const puppeteer = require('puppeteer');
 
 
 
@@ -54,7 +54,7 @@ const puppeteer = require('puppeteer');
     console.log('URL of the page:', url);
     console.log('Location of the screenshot:', screenshotPath);
 
-
+*/
     var innerDiv = document.createElement('div');
     innerDiv.className = `block`;
     innerDiv.id = `block`;
@@ -65,7 +65,7 @@ const puppeteer = require('puppeteer');
     tagName.appendChild(textName); 
     var elementName = document.getElementById(`block`);
     elementName.appendChild(tagName);
-
+/*
     await page.close();
     await browser.close();
   } catch (error) {
@@ -79,3 +79,4 @@ const getHref = (page, selector) =>
     selector => document.querySelector(selector).getAttribute('href'),
     selector
   );
+*/
