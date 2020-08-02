@@ -54,13 +54,14 @@ const puppeteer = require('puppeteer');
     console.log('URL of the page:', url);
     console.log('Location of the screenshot:', screenshotPath);
 
+
     var innerDiv = document.createElement('div');
     innerDiv.className = `block`;
     innerDiv.id = `block`;
     document.body.appendChild(innerDiv);
 
     var tagName = document.createElement("h1");
-    var textName = document.createTextNode(url);
+    var textName = document.createTextNode("hello");
     tagName.appendChild(textName); 
     var elementName = document.getElementById(`block`);
     elementName.appendChild(tagName);
